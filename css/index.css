@@ -23,7 +23,7 @@ body{
     Meiryo,
     sans-serif;
     text-align: center;
-    background-image: url(../img/xxxxxxxx.JPG);
+    background-image: url(../img/natural-beauty-of-nepal.jpg);
     background-size: cover;
     overflow: hidden;
 }
@@ -112,6 +112,22 @@ a:hover{
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
+}
+/* icon animation */
+.fade-in {
+    animation: fadein 1.5s ease-out forwards;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
 }
 
 .item02{
@@ -121,6 +137,7 @@ a:hover{
     margin: 0;
     line-height: 1em;
     overflow: hidden;
+    opacity: 0;
 }
 
 .item01 img, .item02 img{
